@@ -3,12 +3,13 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: paubj <paubj@student.42.fr>                +#+  +:+       +#+         #
+#    By: pbotargu <pbotargu@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/05/03 11:02:36 by pbotargu          #+#    #+#              #
-#    Updated: 2023/06/06 10:42:56 by paubj            ###   ########.fr        #
+#    Created: 2023/06/07 10:20:18 by pbotargu          #+#    #+#              #
+#    Updated: 2023/06/07 10:38:17 by pbotargu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
@@ -20,7 +21,7 @@ SOURCE = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 		ft_toupper.c ft_tolower.c ft_strchr.c ft_strlen.c ft_atoi.c \
 		ft_strlcpy.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_memset.c \
 		ft_memcpy.c ft_bzero.c ft_memmove.c ft_memchr.c ft_memcmp.c \
-		ft_calloc.c    
+		ft_calloc.c ft_itoa.c ft_strdup.c ft_substr.c  
 
 OBJECTS = $(SOURCE:%.c=%.o)
 
