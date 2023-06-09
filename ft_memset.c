@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pbotargu <pbotargu@student.42barcel>       +#+  +:+       +#+        */
+/*   By: pbotargu <pbotargu@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 12:48:08 by pbotargu          #+#    #+#             */
-/*   Updated: 2023/06/02 11:51:27 by pbotargu         ###   ########.fr       */
+/*   Updated: 2023/06/09 11:42:48 by pbotargu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// It fills a block of memory with a specific value.
 
 void	*ft_memset(void *b, int c, size_t len)
 {

@@ -6,13 +6,15 @@
 /*   By: pbotargu <pbotargu@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 10:19:24 by pbotargu          #+#    #+#             */
-/*   Updated: 2023/06/07 10:20:57 by pbotargu         ###   ########.fr       */
+/*   Updated: 2023/06/09 11:33:24 by pbotargu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 #include <stdio.h>
+
+// converts a string into a integer 
 
 int	ft_atoi(const char *str)
 {

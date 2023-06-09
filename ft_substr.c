@@ -6,11 +6,13 @@
 /*   By: pbotargu <pbotargu@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 10:37:03 by pbotargu          #+#    #+#             */
-/*   Updated: 2023/06/07 11:20:07 by pbotargu         ###   ########.fr       */
+/*   Updated: 2023/06/09 11:48:54 by pbotargu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Gets a substring from a string.
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {

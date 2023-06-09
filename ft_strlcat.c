@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pbotargu <pbotargu@student.42barcel>       +#+  +:+       +#+        */
+/*   By: pbotargu <pbotargu@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 10:45:52 by pbotargu          #+#    #+#             */
-/*   Updated: 2023/05/26 10:46:02 by pbotargu         ###   ########.fr       */
+/*   Updated: 2023/06/09 11:45:04 by pbotargu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,8 @@
 #include <stdio.h>
 
 
-/*size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}*/
+/*Concatenates two strings, ensuring the result is properly null-terminated 
+and limited to a specified size*/
 
 size_t ft_strlcat(char *dest, const char *src, size_t size)
 {

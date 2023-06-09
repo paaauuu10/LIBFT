@@ -6,11 +6,13 @@
 /*   By: pbotargu <pbotargu@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 10:19:54 by pbotargu          #+#    #+#             */
-/*   Updated: 2023/06/07 10:19:56 by pbotargu         ###   ########.fr       */
+/*   Updated: 2023/06/09 11:43:54 by pbotargu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Duplicates the string 
 
 char    *ft_strdup(const char *s1)
 {

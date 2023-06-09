@@ -3,16 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pbotargu <pbotargu@student.42barcel>       +#+  +:+       +#+        */
+/*   By: pbotargu <pbotargu@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 12:24:49 by pbotargu          #+#    #+#             */
-/*   Updated: 2023/06/02 11:49:48 by pbotargu         ###   ########.fr       */
+/*   Updated: 2023/06/09 11:48:14 by pbotargu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 #include "libft.h"
+
+//Looks after the last occurrence of a character in a string
 
 char *ft_strrchr(const char *s, int c)
 {

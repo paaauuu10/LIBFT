@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pbotargu <pbotargu@student.42barcel>       +#+  +:+       +#+        */
+/*   By: pbotargu <pbotargu@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 10:38:51 by pbotargu          #+#    #+#             */
-/*   Updated: 2023/06/02 10:51:34 by pbotargu         ###   ########.fr       */
+/*   Updated: 2023/06/09 11:39:07 by pbotargu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Search for a character in a block of memory
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

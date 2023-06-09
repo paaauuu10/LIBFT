@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pbotargu <pbotargu@student.42barcel>       +#+  +:+       +#+        */
+/*   By: pbotargu <pbotargu@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 10:46:25 by pbotargu          #+#    #+#             */
-/*   Updated: 2023/05/26 10:46:27 by pbotargu         ###   ########.fr       */
+/*   Updated: 2023/06/09 11:45:58 by pbotargu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 #include "libft.h"
 #include <string.h>
 #include <stdio.h>
+
+/*Copies a string to a destination buffer while ensuring the result is 
+properly null-terminated and limited to a specified size*/
 
 size_t ft_strlcpy(char *dest, const char *src, size_t size)
 {

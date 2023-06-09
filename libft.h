@@ -6,7 +6,7 @@
 /*   By: pbotargu <pbotargu@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 10:20:33 by pbotargu          #+#    #+#             */
-/*   Updated: 2023/06/07 12:31:46 by pbotargu         ###   ########.fr       */
+/*   Updated: 2023/06/07 12:40:57 by pbotargu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void    *ft_memmove(void *dst, const void *src, size_t len);
 void    ft_bzero(void *s, size_t n);
 void    *ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
-char	*ft_itoa(int n);
+//char	*ft_itoa(int n);
 char    *ft_strdup(const char *s1);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char *ft_strjoin(char const *s1, char const *s2);

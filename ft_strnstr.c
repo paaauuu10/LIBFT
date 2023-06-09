@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pbotargu <pbotargu@student.42barcel>       +#+  +:+       +#+        */
+/*   By: pbotargu <pbotargu@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 10:50:07 by pbotargu          #+#    #+#             */
-/*   Updated: 2023/06/02 11:20:00 by pbotargu         ###   ########.fr       */
+/*   Updated: 2023/06/09 11:47:30 by pbotargu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//retorna la primera aparicio de needle dins de haystack
+//Returns the firs occurence of needle inside haystack, limited by len
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
