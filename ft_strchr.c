@@ -6,7 +6,7 @@
 /*   By: pbotargu <pbotargu@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 11:20:20 by pbotargu          #+#    #+#             */
-/*   Updated: 2023/06/09 11:43:23 by pbotargu         ###   ########.fr       */
+/*   Updated: 2023/06/12 13:23:10 by pbotargu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 // Looks after the first occurence of a character in a string
 
-char *ft_strchr(const char *str, int c)
+char	*ft_strchr(const char *str, int c)
 {
 	size_t	i;
 
@@ -27,5 +27,5 @@ char *ft_strchr(const char *str, int c)
 	}
 	if (c == str[i])
 		return ((char *)(str + i));
-	return NULL;
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: pbotargu <pbotargu@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 12:24:49 by pbotargu          #+#    #+#             */
-/*   Updated: 2023/06/09 11:48:14 by pbotargu         ###   ########.fr       */
+/*   Updated: 2023/06/12 13:43:56 by pbotargu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 //Looks after the last occurrence of a character in a string
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	unsigned int	i;
 
@@ -29,9 +29,9 @@ char *ft_strrchr(const char *s, int c)
 			return ((char *)(s + i));
 		i--;
 	}
-	if(s[i] == c)
+	if (s[i] == c)
 		return ((char *)(s + i));
-	return NULL;
+	return (NULL);
 }
 
 /*int main() {
