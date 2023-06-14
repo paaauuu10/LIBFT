@@ -6,7 +6,7 @@
 /*   By: pbotargu <pbotargu@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 11:20:20 by pbotargu          #+#    #+#             */
-/*   Updated: 2023/06/12 13:23:10 by pbotargu         ###   ########.fr       */
+/*   Updated: 2023/06/15 01:07:54 by pbotargu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ char	*ft_strchr(const char *str, int c)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] == c)
+		if (str[i] == (char)c)
 			return ((char *)(str + i));
 		i++;
 	}
-	if (c == str[i])
+	if ((char)c == str[i])
 		return ((char *)(str + i));
 	return (NULL);
 }
