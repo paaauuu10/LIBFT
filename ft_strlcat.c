@@ -6,7 +6,7 @@
 /*   By: pbotargu <pbotargu@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 10:45:52 by pbotargu          #+#    #+#             */
-/*   Updated: 2023/06/09 11:45:04 by pbotargu         ###   ########.fr       */
+/*   Updated: 2023/06/15 01:28:19 by pbotargu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,34 +14,31 @@
 #include <string.h>
 #include <stdio.h>
 
-
 /*Concatenates two strings, ensuring the result is properly null-terminated 
 and limited to a specified size*/
 
-size_t ft_strlcat(char *dest, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-    size_t  len_dest;
-    size_t  len_src;
-	size_t	ret;
+	size_t  len_dst;
+	size_t  len_src;
 	size_t	i;
 
     i = 0;
-	len_dest = ft_strlen(dest);
+	len_dst = ft_strlen(dst);
     len_src = ft_strlen(src);
     
-	if (size > len_dest)
-		ret = len_src + len_dest;
-	else
-		ret = len_src + size - 1;
+	if (dstsize == 0)
+		return (len_src);
+	if (dstsize <= len_dst)
+		return(dstsize + len_src);
 	
-	while (src[i] != '\0' && (len_dest < (size - 1)))
+	while (src[i] != '\0' && len_dst + i < dstsize - 1)
 	{
-		dest[len_dest] = src[i];
+		dst[len_dst + i] = src[i];
 		i++;
-		len_dest++;
 	}
-	dest[len_dest] = '\0';
-	return (ret);
+	dst[len_dst + i] = '\0';
+	return (len_dst + len_src);
 }
 
 /*int main(int argc, char **argv)
