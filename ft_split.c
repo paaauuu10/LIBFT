@@ -1,38 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbotargu <pbotargu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/02 12:07:38 by pbotargu          #+#    #+#             */
-/*   Updated: 2023/06/22 14:24:51 by pbotargu         ###   ########.fr       */
+/*   Created: 2023/06/22 14:47:28 by pbotargu          #+#    #+#             */
+/*   Updated: 2023/06/22 15:24:29 by pbotargu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <stddef.h>
-
-void	*ft_memmove(void *dst, const void *src, size_t len)
+static size_t	count_words(const char *s, char c)
 {
-	unsigned char	*d;
-	unsigned char	*s;
-	size_t			i;
+	size_t	i;
+	int		x;
 
-	i = 0;
-	d = (unsigned char *)dst;
-	s = (unsigned char *)src;
-	if (d == 0 && s == 0)
-		return (0);
-	if (dst > src)
+	x = 0;
+	while(s[x])
 	{
-		while (len > 0)
-		{
-			d[len - 1] = s[len - 1];
-			len--;
-		}
+		while (s[x] == c)
+			x++;
+
 	}
-	else
-		ft_memcpy(d, s, len);
-	return (d);
+}
+char **ft_split(char const *s, char c)
+{
+	
 }
