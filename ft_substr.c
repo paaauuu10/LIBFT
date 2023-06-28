@@ -16,22 +16,22 @@
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
-	char			*p;
-	unsigned int	i;
+	char	*p;
+	size_t	i;
+	size_t	end;
 
+	i = 0;;
 	if (!s)
 		return(NULL);
-	i = 0;
-	if (*s == 0)
-		return (ft_strdup(""));
 	if (start >= ft_strlen(s))
 		return (ft_strdup(""));
-	if (len > ft_strlen(s) - start)
-		len = ft_strlen(s) - start;
-	p = (char *)malloc(sizeof(char) * (len + 1));
+	end = ft_strlen(s + start);
+	if (end < len)
+		len = end;
+	p = (char *)malloc(len + 1);
 	if (!p)
 		return (NULL);
-	while (len--)
+	while (s[start + i] && i < len)
 	{
 		p[i] = s[start + i];
 		i++;
