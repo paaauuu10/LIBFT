@@ -20,10 +20,10 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	size_t	i;
 	size_t	end;
 
-	i = 0;;
+	i = 0;
 	if (!s)
-		return(NULL);
-	if (start >= ft_strlen(s))
+		return (NULL);
+	if (start > ft_strlen(s))
 		return (ft_strdup(""));
 	end = ft_strlen(s + start);
 	if (end < len)

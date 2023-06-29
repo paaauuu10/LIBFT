@@ -21,8 +21,6 @@ static char	**ft_freeall(char **tab, size_t i)
 	return (NULL);
 }
 
-#include "libft.h"
-
 int	checkwords(char const *s, char c)
 {
 	int	numwords;
@@ -48,7 +46,6 @@ char	**ft_split(char const *s, char c)
 {
 	char	**split;
 	int		i;
-	int		first;
 	int		last;
 
 	split = (char **)malloc((checkwords(s, c) + 1) * sizeof(char *));
@@ -57,19 +54,18 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	while (*s)
 	{
-		first = 0;
 		last = 0;
 		while (*s == c)
 			s++;
-		while (*s != c && *s != '\0')
-		{
+		while (*s != c && *s)
+		{	
 			s++;
 			last++;
 		}
 		if (last > 0)
-		{
+		{	
 			split[i] = ft_substr(s - last, 0, last);
-			if (!split)
+			if (!split[i])
 				return (ft_freeall(split, i));
 			i++;
 		}
@@ -77,4 +73,3 @@ char	**ft_split(char const *s, char c)
 	split[i] = NULL;
 	return (split);
 }
-
