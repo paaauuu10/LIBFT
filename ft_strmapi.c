@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+//applies a function to all the characters og string, and creates a new string
+
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*snew;

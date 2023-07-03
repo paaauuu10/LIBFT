@@ -12,8 +12,7 @@
 
 #include "libft.h"
 
-#include <stdlib.h>
-#include <stdio.h>
+// Integer convertion into a string.
 
 static int	num_digits(int n)
 {
@@ -57,11 +56,3 @@ char	*ft_itoa(int c)
 	}
 	return (array);
 }
-
-/*int    main()
-{
-    int    num = 12;
-    char    *str = ft_itoa(num);
-    printf("Int a string: %s\n", str);
-    return (0);
-}*/

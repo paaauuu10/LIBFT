@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
 #include "libft.h"
 
 //Looks after the last occurrence of a character in a string
@@ -33,18 +31,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)(s + i));
 	return (NULL);
 }
-
-/*int main() {
-    const char *str = "s";
-    int c = 't';
-
-    // Uso de la función original strrchr
-    char *result_original = strrchr(str, c);
-    printf("strrchr (Original): %s\n", result_original);
-
-    // Uso de tu réplica ft_strrchr
-    char *result_repl = ft_strrchr(str, c);
-    printf("ft_strrchr (Réplica): %s\n", result_repl);
-
-    return 0;
-}*/

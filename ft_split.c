@@ -11,13 +11,15 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-static char	**ft_freeall(char **tab, size_t i)
+//Takes a string and splits the string into an array of substrigs
+//uses a delimiter
+
+static char	**ft_free(char **split, size_t i)
 {
 	while (i-- > 0)
-		free(tab[i]);
-	free(tab);
+		free(split[i]);
+	free(split);
 	return (NULL);
 }
 
@@ -62,7 +64,7 @@ char	**createwords(char const *s, char c, char **split)
 		{	
 			split[i] = ft_substr(s - last, 0, last);
 			if (!split[i])
-				return (ft_freeall(split, i));
+				return (ft_free(split, i));
 			i++;
 		}
 	}

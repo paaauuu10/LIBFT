@@ -11,11 +11,12 @@
 # **************************************************************************** #
 
 
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror
-REMOV = rm -rf
-
 NAME = libft.a
+
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
+
+HEADER = libft.h
 
 SOURCE = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 		ft_toupper.c ft_tolower.c ft_strchr.c ft_strlen.c ft_atoi.c \
@@ -30,13 +31,20 @@ OBJECTS = $(SOURCE:%.c=%.o)
 all: ${NAME}
 
 
-$(NAME): $(OBJECTS)
+$(NAME): $(OBJECTS) $(HEADER)
 	@ar rc $(NAME) $(OBJECTS)
+	ranlib $(NAME)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
 
 clean:
-	$(REMOV) $(OBJECTS)
+	rm -f $(OBJECTS)
 
 fclean: clean
-	$(REMOV) $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: re all clean fclean bonus

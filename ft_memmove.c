@@ -11,7 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
+
+//Copies memory from src to dest, len = bytes copied.
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

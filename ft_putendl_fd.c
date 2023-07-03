@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+//Writes a string to the fd, and a newline
+
 void	ft_putendl_fd(char *s, int fd)
 {
 	ft_putstr_fd(s, fd);

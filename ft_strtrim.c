@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+//delete the specified characters at the start and end of a string
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	first;

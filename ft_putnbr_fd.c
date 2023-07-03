@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+//Write integer as string to the fd
+
 void	ft_putnbr_fd(int n, int fd)
 {
 	long int	nb;
