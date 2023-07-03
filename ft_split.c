@@ -42,15 +42,11 @@ int	checkwords(char const *s, char c)
 	return (numwords);
 }
 
-char	**ft_split(char const *s, char c)
+char	**createwords(char const *s, char c, char **split)
 {
-	char	**split;
-	int		i;
-	int		last;
+	int	i;
+	int	last;
 
-	split = (char **)malloc((checkwords(s, c) + 1) * sizeof(char *));
-	if (!split)
-		return (NULL);
 	i = 0;
 	while (*s)
 	{
@@ -73,3 +69,14 @@ char	**ft_split(char const *s, char c)
 	split[i] = NULL;
 	return (split);
 }
+
+char	**ft_split(char const *s, char c)
+{
+	char	**split;
+
+	split = (char **)malloc((checkwords(s, c) + 1) * sizeof(char *));
+	if (!split)
+		return (NULL);
+	split = (createwords(s, c, split));
+	return (split);
+}	
